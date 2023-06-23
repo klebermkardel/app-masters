@@ -63,12 +63,3 @@ Aqui estão alguns prints do projeto:
 
 ![Print 2](https://github.com/klebermkardel/app-masters/blob/main/img/print2.png?raw=true)
 
-
-
-## Contribuição
-
-Contribuições são bem-vindas! Se você encontrar algum problema no projeto ou tiver alguma melhoria a ser sugerida, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
