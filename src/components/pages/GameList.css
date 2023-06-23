@@ -1,0 +1,84 @@
+
+
+/* Estilização do componente GameList */
+.game-list {
+  max-width: 800px; /* Largura máxima do componente */
+  margin: 0 auto; /* Centraliza o componente horizontalmente */
+  padding: 1rem; /* Espaçamento interno do componente */
+}
+
+/* Estilização do cabeçalho do componente */
+.game-list-header {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 1rem; 
+}
+
+/* Estilização do título do componente */
+.game-list-title {
+  font-size: 1.5rem;
+}
+
+/* Estilização da barra de pesquisa do componente */
+.game-list-search {
+  display: flex; 
+  align-items: center; 
+  background-color: #f2f2f2; 
+  border-radius: 4px; 
+  padding: 0.5rem; 
+  margin-bottom: 0.5rem; 
+}
+
+/* Estilização do campo de entrada da pesquisa */
+.search-input {
+  flex-grow: 1; 
+  border: none; 
+  outline: none; 
+  padding: 0.25rem; 
+  background-color: transparent; 
+}
+
+/* Estilização do ícone de pesquisa */
+.search-icon {
+  color: #888; 
+  cursor: pointer; 
+}
+
+/* Estilização do seletor de gênero */
+.genre-select {
+  padding: 0.25rem; 
+  border-radius: 4px; 
+  margin-left: 0.5rem; 
+}
+
+/* Estilização dos cartões de jogos */
+.game-list-cards {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  grid-gap: 1rem; 
+}
+
+/* Estilização das mensagens de erro ou mensagem de jogos inexistentes */
+.error-message,
+.no-games-message {
+  text-align: center; 
+  margin-top: 2rem; 
+  color: #888; 
+}
+
+/* Estilos para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+  .game-list-header {
+    flex-direction: column; 
+  }
+
+  .game-list-search {
+    margin-bottom: 0.5rem; 
+  }
+
+  .genre-select {
+    margin-left: 0; 
+    margin-top: 0.5rem; 
+  }
+}

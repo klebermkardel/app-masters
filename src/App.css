@@ -1,0 +1,53 @@
+/* App.css */
+
+/* Estilos para o body */
+body {
+  background-color: #f5f5f5; 
+  margin: 0; 
+  padding: 0; /* Remove o preenchimento padrão */
+  font-family: Arial, sans-serif; /* Define a família de fontes utilizada */
+}
+
+/* Estilos para o componente .app */
+.app {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilos para o título do aplicativo */
+.app__title {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+/* Estilos para o filtro da lista de jogos */
+.game-list__filter {
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom: 10px; 
+}
+
+/* Estilos para os cards da lista de jogos */
+.game-list__cards {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+}
+
+/* Estilos para o card de jogo */
+.game-card {
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  padding: 10px; 
+  text-align: center; 
+}
+
+
+/* Estilos para o loader */
+.loader {
+  text-align: center; 
+}
+
