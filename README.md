@@ -58,7 +58,7 @@ src
 
 Aqui estão alguns prints do projeto:
 
-![Print 1]([caminho/para/print1.png](https://github.com/klebermkardel/app-masters/blob/main/img/print1.png?raw=true))
+![Print 1](https://github.com/klebermkardel/app-masters/blob/main/img/print1.png?raw=true)
 
 
 ![Print 2](caminho/para/print2.png)
