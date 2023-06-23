@@ -61,7 +61,7 @@ Aqui estão alguns prints do projeto:
 ![Print 1](https://github.com/klebermkardel/app-masters/blob/main/img/print1.png?raw=true)
 
 
-![Print 2](caminho/para/print2.png)
+![Print 2](https://github.com/klebermkardel/app-masters/blob/main/img/print2.png?raw=true)
 
 
 
