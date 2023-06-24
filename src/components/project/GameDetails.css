@@ -18,7 +18,7 @@
     padding: 2rem;
     text-align: center;
     position: relative;
-    height: 450px; /* Altura fixa para todos os contêineres */
+    height: 500px; /* Altura fixa para todos os contêineres */
     width: 450px; /* Largura fixa para todos os contêineres */
     display: flex;
     flex-direction: column;

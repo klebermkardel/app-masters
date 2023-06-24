@@ -9,7 +9,7 @@ Este projeto é um aplicativo de lista de jogos, desenvolvido em React. Ele perm
 - Exibir lista de jogos
 - Filtrar jogos por gênero
 - Realizar pesquisas por título
-- Exibir informações detalhadas de cada jogo
+- Exibir informações detalhadas de cada jogo (ao clicar em cada card você pode ver mais informações)
 
 ## Instalação
 

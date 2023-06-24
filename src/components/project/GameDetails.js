@@ -1,12 +1,15 @@
 import React from "react";
 import "./GameDetails.css";
+import { FiX } from "react-icons/fi";
 
+// Componente GameDetails para exibir os detalhes de um jogo
 const GameDetails = ({ game, onClose }) => {
   return (
     <div className="game-details">
       <div className="game-details-content">
+        {/* Botão de fechar */}
         <button className="game-details-close-button" onClick={onClose}>
-          X
+          <FiX />
         </button>
         <img src={game.thumbnail} alt={game.title} className="game-details-image" />
         <h3 className="game-details-title">{game.title}</h3>
