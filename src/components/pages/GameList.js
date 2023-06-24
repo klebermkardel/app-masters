@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTransition, animated } from 'react-spring';
 import Loader from '../layout/Loader';
 import GameCard from '../project/GameCard';
+import GameDetails from '../project/GameDetails';
 import './GameList.css';
 import { fetchGames } from '../services/api';
 import SearchBar from '../layout/SearchBar';
@@ -16,6 +17,8 @@ const GameList = () => {
   const [searchTerm, setSearchTerm] = useState(''); // Termo de busca
   const [selectedGenre, setSelectedGenre] = useState(''); // Gênero selecionado
   const [error, setError] = useState(''); // Erro na busca de jogos
+  const [selectedGame, setSelectedGame] = useState(null); // Jogo selecionado para exibir detalhes
+  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar se o modal está aberto
 
   // Efeito que busca os jogos ao carregar o componente
   useEffect(() => {
@@ -26,7 +29,9 @@ const GameList = () => {
         setError(''); // Limpa o erro em caso de sucesso
       } catch (error) {
         console.log(error);
-        setError('O servidor não conseguiu responder por agora, tente voltar novamente mais tarde');
+        setError(
+          'O servidor não conseguiu responder por agora, tente voltar novamente mais tarde'
+        );
       } finally {
         setIsLoading(false); // Define o estado de carregamento como falso independentemente do resultado
       }
@@ -62,6 +67,18 @@ const GameList = () => {
 
   const genres = [...new Set(games.map((game) => game.genre))]; // Lista de gêneros sem repetição
 
+  // Função para lidar com o clique em um jogo
+  const handleGameClick = (game) => {
+    setSelectedGame(game);
+    setIsModalOpen(true);
+  };
+
+  // Função para fechar o modal e limpar o jogo selecionado
+  const handleModalClose = () => {
+    setSelectedGame(null);
+    setIsModalOpen(false);
+  };
+
   // Definição das transições animadas utilizando o hook useTransition
   const transitions = useTransition(filteredGames, {
     from: { opacity: 0, transform: 'scale(0.8)' },
@@ -96,16 +113,24 @@ const GameList = () => {
         // Exibe os cards dos jogos com transições animadas
         <div className="game-list-cards">
           {transitions((style, game) => (
-            <animated.div style={style} key={game.id}>
-              <GameCard 
-                id={game.id} 
-                title={game.title} 
-                genre={game.genre} 
-                developer={game.developer} 
-                release_date={new Date(game.release_date).toLocaleDateString('pt-BR')} 
-                thumbnail={game.thumbnail} />
+            <animated.div style={style} key={game.id} onClick={() => handleGameClick(game)}>
+              <GameCard
+                id={game.id}
+                title={game.title}
+                genre={game.genre}
+                developer={game.developer}
+                release_date={new Date(game.release_date).toLocaleDateString('pt-BR')}
+                thumbnail={game.thumbnail}
+              />
             </animated.div>
           ))}
+        </div>
+      )}
+
+      {/* Exibe os detalhes do jogo selecionado, se houver */}
+      {isModalOpen && (
+        <div className="game-details" onClick={handleModalClose}>
+          <GameDetails game={selectedGame} onClose={handleModalClose} />
         </div>
       )}
     </div>
