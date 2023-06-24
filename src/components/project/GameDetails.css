@@ -1,21 +1,25 @@
+/* Estilos do modal de detalhes do jogo */
+
+/* Estilo do contêiner do modal */
 .game-details {
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 999;
+    z-index: 999; 
   }
   
+  /* Estilo do conteúdo do modal */
   .game-details-content {
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+    background-color: #fff; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 2rem; 
     text-align: center;
     position: relative;
     height: 500px; /* Altura fixa para todos os contêineres */
@@ -25,56 +29,64 @@
     justify-content: space-between;
   }
   
+  /* Estilo da imagem do jogo */
   .game-details-image {
     width: 100%;
     max-height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+    object-fit: cover; 
+    border-radius: 4px; 
+    margin-bottom: 1rem; 
   }
   
+  /* Estilo do título do jogo */
   .game-details-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.2rem; 
+    font-weight: bold; 
   }
   
+  /* Estilo dos parágrafos de informações do jogo */
   .game-details-p {
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-  }
-
-  span {
-    font-weight: bold;
+    font-size: 0.9rem; 
+    margin-bottom: 5px; 
   }
   
+  /* Estilo do elemento <span> dentro dos parágrafos */
+  span {
+    font-weight: bold; 
+  }
+  
+  /* Estilo do botão de fechar */
   .game-details-close-button {
-    border: none;
-    background-color: transparent;
-    color: #d6d6d6;
+    border: none; 
+    background-color: transparent; 
+    color: #d6d6d6; 
     font-size: 1.5rem; 
-    cursor: pointer;
-    position: absolute;
+    cursor: pointer; 
+    position: absolute; 
     top: -35px; 
     right: -3px; 
     z-index: 1000; 
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; 
   }
   
+  /* Estilo do botão de fechar quando o mouse passa por cima */
   .game-details-close-button:hover {
     color: #ff0000; 
   }
   
-  /* Responsividade para dispositivos móveis */
+  /* Estilos responsivos para dispositivos móveis */
   @media (max-width: 768px) {
+    /* Reduz a largura do modal para ocupar a maior parte da tela */
     .game-details-content {
-      width: 90%; 
-      max-width: 400px; 
+      width: 90%;
+      max-width: 400px; /* Define uma largura máxima para evitar que fique muito esticado */
     }
   
+    /* Ajusta a posição vertical e horizontal do botão de fechar em dispositivos móveis */
     .game-details-close-button {
-      top: -35px; 
-      right: -3px; 
+      top: -35px;
+      right: -3px;
     }
   }
   
