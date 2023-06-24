@@ -79,14 +79,14 @@
   @media (max-width: 768px) {
     /* Reduz a largura do modal para ocupar a maior parte da tela */
     .game-details-content {
-      width: 90%;
+      width: 85%;
       max-width: 400px; /* Define uma largura máxima para evitar que fique muito esticado */
     }
   
     /* Ajusta a posição vertical e horizontal do botão de fechar em dispositivos móveis */
     .game-details-close-button {
       top: -35px;
-      right: -3px;
+      right: -1px;
     }
   }
   
@@ -94,8 +94,8 @@
   @media (min-width: 768px) and (max-width: 1024px) {
     /* Ajusta a largura do modal para telas de notebook */
     .game-details-content {
-      width: 600px;
-      max-width: 90%;
+        height: 500px; 
+        width: 450px; 
     }
   }
   
