@@ -90,3 +90,12 @@
     }
   }
   
+  /* Estilos responsivos para notebooks */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Ajusta a largura do modal para telas de notebook */
+    .game-details-content {
+      width: 600px;
+      max-width: 90%;
+    }
+  }
+  
