@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Lista de Jogos
 
 ## Descrição
 
@@ -58,17 +58,8 @@ src
 
 Aqui estão alguns prints do projeto:
 
-![Print 1](caminho/para/print1.png)
+![Print 1](https://github.com/klebermkardel/app-masters/blob/main/img/print1.png?raw=true)
 
 
-![Print 2](caminho/para/print2.png)
+![Print 2](https://github.com/klebermkardel/app-masters/blob/main/img/print2.png?raw=true)
 
-
-
-## Contribuição
-
-Contribuições são bem-vindas! Se você encontrar algum problema no projeto ou tiver alguma melhoria a ser sugerida, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
