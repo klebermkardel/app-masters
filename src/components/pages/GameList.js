@@ -90,6 +90,8 @@ const GameList = () => {
       ) : error ? (
         // Exibe a mensagem de erro, caso exista
         <p className="error-message">{error}</p>
+      ) : filteredGames.length === 0 ? ( // Verifica se a lista de jogos filtrados está vazia
+        <p className="error-message">Nenhum jogo encontrado</p>
       ) : (
         // Exibe os cards dos jogos com transições animadas
         <div className="game-list-cards">
