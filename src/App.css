@@ -5,7 +5,7 @@ body {
   background-color: #f5f5f5; 
   margin: 0; 
   padding: 0; /* Remove o preenchimento padrão */
-  font-family: Arial, sans-serif; /* Define a família de fontes utilizada */
+  font-family: 'Montserrat', sans-serif; /* Define a família de fontes utilizada */
 }
 
 /* Estilos para o componente .app */
