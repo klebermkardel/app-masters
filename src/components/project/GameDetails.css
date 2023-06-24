@@ -52,29 +52,29 @@
     border: none;
     background-color: transparent;
     color: #d6d6d6;
-    font-size: 1.5rem; /* Aumenta o tamanho do ícone do botão de fechar */
+    font-size: 1.5rem; 
     cursor: pointer;
     position: absolute;
-    top: -35px; /* Ajusta a posição vertical */
-    right: -3px; /* Ajusta a posição horizontal */
-    z-index: 1000; /* Certifica-se de que o botão de fechar fique acima do modal */
+    top: -35px; 
+    right: -3px; 
+    z-index: 1000; 
     transition: color 0.3s ease;
   }
   
   .game-details-close-button:hover {
-    color: #ff0000; /* Muda a cor do ícone do botão de fechar quando o mouse passa por cima */
+    color: #ff0000; 
   }
   
   /* Responsividade para dispositivos móveis */
   @media (max-width: 768px) {
     .game-details-content {
-      width: 90%; /* Reduz a largura do modal para ocupar a maior parte da tela */
-      max-width: 400px; /* Define uma largura máxima para evitar que fique muito esticado */
+      width: 90%; 
+      max-width: 400px; 
     }
   
     .game-details-close-button {
-      top: -35px; /* Ajusta a posição vertical em dispositivos móveis */
-      right: -3px; /* Ajusta a posição horizontal em dispositivos móveis */
+      top: -35px; 
+      right: -3px; 
     }
   }
   
